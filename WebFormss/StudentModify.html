@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <h1>修改学生信息</h1>
+    <form action="StudentModifyHandler.ashx" method="post">
+        <table cellspacing="10">
+            <tr>
+                <td>
+                    <label for="txtUserName">用户名：</label>
+                </td>
+                <td>
+                    <input type="text" name="txtUserName" id='txtUserName' />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>班级：</label>
+                </td>
+                <td>
+                    <select name="cboClassGuid" id='cboClass'>
+                        <option value=''></option>
+                        <!--<%=optionClass%>-->
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="txtStuNo">学号：</label>
+                </td>
+                <td>
+                    <input type="text" name="txtStuNo" id='txtStuNo' />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="txtName">姓名：</label>
+                </td>
+                <td>
+                    <input type="text" name="txtName" id='txtName' />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="rdoMale">性别：</label>
+                </td>
+                <td>
+                    <label><input type="radio" name="sex" id="rdoMale" value="男" />男</label>
+                    &nbsp;&nbsp; &nbsp;&nbsp;
+                    <label><input type="radio" name="sex" id="rdoFamel" value="女" />女</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="txtAddress">地址：</label>
+                </td>
+                <td>
+                    <input type="text" name="txtAddress" id='txtAddress' />
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" name="btnModify" value="修改" />
+                </td>
+            </tr>
+        </table>
+        <input type="hidden" name="isPostBack" value="ok" />
+        <input type="hidden" name="Guid" id='Guid' value="guid" />
+    </form>
+</body>
+</html>

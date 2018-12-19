@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+        form span {
+            margin: 20px;
+        }
+
+        #btnAdd {
+        }
+
+        #bg{
+            display:none;
+            position:absolute;
+            top:0%;
+            left:0%;
+            width:100%;
+            height:100%;
+            background-color:black;
+            z-index:1001;
+            opacity:50;
+            filter:alpha(opacity=50);
+        }
+        #bg img{
+            position:absolute;
+            top:40%;
+            left:40%;
+            width:20%;
+            background-color:black;
+            z-index:1002;
+            opacity:50;
+            filter:alpha(opacity=50);
+
+        }
+    </style>
+</head>
+<body>
+    <div id="bg">
+        <img src="images/0.gif" />
+    </div>
+    <h6>欢迎 <!--<%=LoginId%>--><a href="ModifyPassword.html">修改密码</a></h6>
+    <h1>学生管理</h1>
+    <div>
+        <input type="button" value="增加学生" id="btnAdd" />
+    </div>
+    <form action="StudentHandlerAsyncAjax.ashx" method="post">
+        <div>
+            <span>
+                <label for="txtStudentName">请输入要查询的姓名</label>
+                <input type="text" name="txtStudentName" id='txtStudentName' />
+            </span>
+            <span>
+                <label for="cboSex">请选择要查询的性别</label>
+                <select name="cboSex" id="cboSex">
+                    <option value=''></option>
+                    <option value='男'>男</option>
+                    <option value='女'>女</option>
+                </select>
+            </span>
+            <br />
+            <span>
+                <label for="cboClass">请选择要查询的班级</label>
+                <select name="cboClass" id="cboClass">
+                    <option></option>
+                    <!--<%=optionClass%>-->
+                </select>
+            </span>
+            <span>
+                <input type="submit" value="查询" id='btnQuery' onclick="myAjax()"/>
+            </span>
+            <input type="hidden" name="isPostBack" value="ok" />
+
+        </div>
+        <div>
+            <table border="1" id="showStudent">
+                <tr>
+                    <th>用户名</th>
+                    <th>班级</th>
+                    <th>学号</th>
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th>地址</th>
+                    <th>修改</th>
+                    <th>删除</th>
+                </tr>
+                <!--<%=trStudent%>-->
+            </table>
+        </div>
+        <div id="page">
+            <a id="First">第一页</a>
+            <a id="Previous">上一页</a>
+            <a id="Next">下一页</a>
+            <a id="Last">最后一页</a>
+            <span id="pageMsg">第<!--<%=pageNumber%>-->页，共<!--<%=pageTotalNumber%>-->页</span>
+            <input type="hidden" name="aBtn" id="aBtn" value="" />
+            <input type="hidden" name="pageNumber" id='pageNumber' />
+            <input type="hidden" name="pageTotalNumber" id='pageTotalNumber' />
+        </div>
+
+    </form>
+    <script src="Scripts/jquery.js"></script>
+    <script>
+        function modify(guid) {
+
+            window.open('StudentModifyHandler.ashx?guid=' + guid);
+        };
+        function Remove(guid) {
+
+            window.open('StudentRemoveHandler.ashx?guid=' + guid);
+        };
+        $(function () {
+            $('#btnQuery').on('click', function () {
+                debugger;
+                function showdiv() {
+                    document.getElementById('bg').style.display = "block";
+                }
+                function hidediv() {
+                    document.getElementById("bg").style.display = 'none';
+                }
+
+                function myAjax() {
+                    $.ajax({
+                        url: '/StudentHandlerAsyncAjax.ashx',
+                        type: 'POST',
+                        async: true,
+                        data: 'txtStudentName=' + $('#txtStudentName').val() + '&cboSex=' + $('#cboSex').val() + '&cboClass=' + $('#cboClass').val(),
+                        dataType: 'json',
+                        beforeSend: function (data) {
+                            showdiv();
+                            $('#showStudent tr td').parent().remove();
+                        },
+                        success: function (data) {
+                            debugger;
+                            //$('showStudent').append(data.Rows);
+                            if (data.PageTotalNumber>0) {
+                                $.each(data.Rows, function (n, item) {
+                                    $('#showStudent').append(
+                                        '<tr>' +
+                                            '<td>' + item.LoginId + '</td><td>' + item.classs.ClassName + '</td><td>' + item.StudentNO + '</td><td>' + item.StudentName + '</td><td>' + item.Sex + '</td><td>' + item.Address + '</td>' +
+                                            '<td><input type="button" value="修改" onclick=modify(' + item.StudentGuid + '))/></td>' +
+                                            '<td><input type="button" value="删除" onclick=Remove(' + item.StudentGuid + ')) /></td>' +
+                                        '</tr>');
+                                });
+
+                                $('#pageMsg').html('第' + data.PageNumber + '页,共' + data.PageTotalNumber + '页');
+                            }
+                            else {
+                                $('#showStudent').append("<tr><td colspan='7' align='center'>查无结果</td></tr>");
+                                $('#pageMsg').html('');
+                            }
+                            pageNumber = data.PageNumber;
+                            pageTotalNumber = data.PageTotalNumber;
+
+                            $('#First').off('click').on('click', function () {
+                                pageNumber = 1;
+                                myAjax();
+                                return false;
+                            });
+
+                            $('#Previous').off('click').on('click', function () {
+                                pageNumber--;
+                                myAjax();
+                                return false;
+                            });
+
+                            $('#Next').off('click').on('click', function () {
+                                pageNumber++;
+                                myAjax();
+                                return false;
+                            });
+
+                            $('#Last').off('click').on('click', function () {
+                                pageNumber = pageTotalNumber;
+                                myAjax();
+                                return false;
+                            });
+
+                            $('#First').attr('href', 'javascript:void(0);');
+                            $('#Previous').attr('href', 'javascript:void(0);');
+                            $('#Next').attr('href', 'javascript:void(0);');
+                            $('#Last').attr('href', 'javascript:void(0);');
+
+                            if (pageNumber <= 1) {
+                                $('#First').removeAttr('href').off('click');
+                                $('#Previous').removeAttr('href').off('click');
+                            }
+
+                            if (pageNumber >= pageTotalNumber) {
+                                $('#Next').removeAttr('href').off('click');
+                                $('#Last').removeAttr('href').off('click');
+                            }
+                        },
+                        complete: function () {
+                            hidediv();
+                        }
+                    })
+                }
+            });
+        });
+        $(function () {
+            $('btnQuery').on('click', function () {
+                pageNumber = 1;
+                myAjax();
+            });
+            return false;
+        });
+
+        $(function () {
+            //添加按钮的点击事件
+            $('#btnAdd').on('click', function () {
+                window.open('StudentAddHandler.ashx');
+            }); 
+        });
+    </script>
+</body>
+</html>

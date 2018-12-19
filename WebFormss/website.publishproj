@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+***********************************************************************************************
+website.publishproj
+
+警告: 请勿修改此文件，它将用于 Web 发布过程。
+
+版权所有 (C) Microsoft Corporation。保留所有权利。
+
+***********************************************************************************************
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{e9553d2d-bcba-4f38-a50b-a49bd92d2bd6}</ProjectGuid>
+    <SourceWebPhysicalPath>$(MSBuildThisFileDirectory)</SourceWebPhysicalPath>
+    <SourceWebVirtualPath>/WebFormss</SourceWebVirtualPath>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <SourceWebProject>
+    </SourceWebProject>
+    <SourceWebMetabasePath>
+    </SourceWebMetabasePath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <!-- for VS2010 we need to use 10.5 but for VS2012+ we should use VisualStudioVersion -->
+    <WebPublishTargetsVersion Condition=" '$(WebPublishTargetsVersion)' =='' and '$(VisualStudioVersion)' == 10.0 ">10.5</WebPublishTargetsVersion>
+    <WebPublishTargetsVersion Condition=" '$(WebPublishTargetsVersion)'=='' ">$(VisualStudioVersion)</WebPublishTargetsVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(WebPublishTargetsVersion)</VSToolsPath>
+    <_WebPublishTargetsPath Condition=" '$(_WebPublishTargetsPath)'=='' ">$(VSToolsPath)</_WebPublishTargetsPath>
+    <AssemblyFileVersion Condition="'$(AssemblyFileVersion)' == ''">1.0.0.0</AssemblyFileVersion>
+    <AssemblyVersion Condition="'$(AssemblyVersion)' == ''">1.0.0.0</AssemblyVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>$(AssemblyFileVersion)</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>$(AssemblyVersion)</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Student\BLL\BLL.csproj">
+      <Project>{32A31DA0-48C0-4B22-8296-396160890509}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Student\DALAbstractFactory\DALAbstractFactory.csproj">
+      <Project>{88FFD678-AF93-4625-8DF1-26AE4155F7CD}</Project>
+      <Name>DALAbstractFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Student\DALMSSQLFactory\DALMSSQLFactory.csproj">
+      <Project>{D9C13930-FCAA-4EF8-AF52-2A6584740E21}</Project>
+      <Name>DALMSSQLFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Student\DALMSSQL\DALMSSQL.csproj">
+      <Project>{91054D31-8B9F-4840-83EE-9F4F684226C9}</Project>
+      <Name>DALMSSQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Student\DALMySQLFactory\DALMySQLFactory.csproj">
+      <Project>{9FB738C4-1424-4D17-9343-D6F5BEE5F13D}</Project>
+      <Name>DALMySQLFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Student\DALMySQL\DALMySQL.csproj">
+      <Project>{0D169515-134C-4CAE-A47D-FCC4D67C400E}</Project>
+      <Name>DALMySQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Student\IBLL\IBLL.csproj">
+      <Project>{367E055D-CA6D-4A2B-B285-4C10378C0CB2}</Project>
+      <Name>IBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Student\IDAL\IDAL.csproj">
+      <Project>{B6C1251C-515B-4F18-8143-8C0079C95E42}</Project>
+      <Name>IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Student\ModelStuView\ModelStuView.csproj">
+      <Project>{B5122C5A-AE05-476B-B413-64D76024CFBD}</Project>
+      <Name>ModelStuView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Student\ModelStu\ModelStu.csproj">
+      <Project>{85B4EF70-548A-40DB-B6BF-F147670915D9}</Project>
+      <Name>ModelStu</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Student\VerificationCode\VerificationCode.csproj">
+      <Project>{E9126CE4-7DEF-4CF0-B61F-459D5A279D2C}</Project>
+      <Name>VerificationCode</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(_WebPublishTargetsPath)\Web\Microsoft.WebSite.Publishing.targets" />
+</Project>

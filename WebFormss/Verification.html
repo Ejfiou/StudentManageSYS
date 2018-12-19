@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <form action="VerificationHandler.ashx" method="post">
+        <table>
+            <tr><td><img src="VerificationHandler.ashx" /></td></tr>
+            <tr>
+                <td><input type="text" id="txtVerification" name="txtVerification" /></td>
+                <td><input type="submit" value="验证" /></td>
+            </tr>
+        </table>
+        <script src="Scripts/jquery.js"></script>
+        ScriptManager.RegisterStartupScript(this.Page, this.GetType(), "Startup", "alert('ValidatedCode is right!');", true);
+        <!--%=ScriptManager%-->
+    </form>
+</body>
+</html>

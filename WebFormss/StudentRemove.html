@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <h1>删除学生信息</h1>
+    <form action="StudentRemoveHandler.ashx" method="post">
+        <table cellspacing="10">
+            <tr>
+                <td>
+                    <label >用户名：</label>
+                </td>
+                <td>
+                    <label ><!--<%=LoginId%>--></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>班级：</label>
+                </td>
+                <td>
+                    <label><!--<%=ClassName%>--></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="txtStuNo">学号：</label>
+                </td>
+                <td>
+                    <label><!--<%=StudentNo%>--></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="txtName">姓名：</label>
+                </td>
+                <td>
+                    <label><!--<%=StudentName%>--></label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="rdoMale">性别：</label>
+                </td>
+                <td>
+                    <label><!--<%=Sex%>--></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="txtAddress">地址：</label>
+                </td>
+                <td>
+                    <label><!--<%=Address%>--></label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" name="btnRemove" value="删除" />
+                </td>
+            </tr>
+        </table>
+        <input type="hidden" name="isPostBack" value="ok" />
+        <input type="hidden" name="Guid" id='Guid' value="guid" />
+    </form>
+</body>
+</html>

@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>登录</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        .code {
+            background-image: url(code.jpg);
+            font-family: Arial;
+            font-style: italic;
+            color: Red;
+            border: 0;
+            padding: 2px 3px;
+            letter-spacing: 3px;
+            font-weight: bolder;
+        }
+
+        .unchanged {
+            border: 0;
+        }
+    </style>
+    <<!--script type="text/javascript">
+
+        var code; //在全局 定义验证码
+        function createCode() {
+            code = "";
+            var codeLength = 6;//验证码的长度
+            var checkCode = document.getElementById("checkCode");
+            var selectChar = new Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');//所有候选组成验证码的字符，当然也可以用中文的
+
+            for (var i = 0; i < codeLength; i++) {
+                var charIndex = Math.floor(Math.random() * 36);
+                code += selectChar[charIndex];
+            }
+
+            if (checkCode) {
+                checkCode.className = "code";
+                checkCode.value = code;
+            }
+        }
+    </script>-->
+</head>
+<body> <!--onload="createCode()"-->
+    <h6>欢迎光临！您是第<!--<%=LoginNum>-->个访问该网站</h6>
+    <form action="LoginHandler.ashx" method="post">
+        <table>
+            <tr>
+                <td><label for="txtUserName">用户名：</label></td>
+                <td><input type="text" name="txtUserName" id="txtUserName" /></td>
+            </tr>
+            <tr>
+                <td><label for="txtUserPwd">密  码：</label></td>
+                <td><input type="password" name="txtUserPwd" id="txtUserPwd" /></td>
+            </tr>
+
+            <tr>
+                <td><label for="txtVerificationCode" >请输入验证码：</label></td>
+                <td><input type="text" name="txtVerificationCode" id="txtVerificationCode" /></td>
+
+                <!--<td>
+            <input type="text" id="code" />
+            <input type="text" onclick="createCode()" readonly="readonly"id="checkCode" class="unchanged" style="width: 80px" />
+        </td>-->
+            </tr>
+            <tr>
+                <td></td>
+                <td><label for="txtVerificationCode" style="color:silver">请输入下图的字符,不区分大小写</label></td>                
+            </tr>
+            <tr>
+                <td></td>
+                <td><img src="/VerificationCodeHandler.ashx" id="vimg" alt="验证码" width="80" height="30" onclick="refresh()"/><a href="#" onclick="refresh()">看不清换一张</a></td>
+           </tr>
+            <!--<tr>
+                <td><img src="VerificationHandler.ashx" width="120px" height="50px" /></td>
+            </tr>-->
+            <tr>
+                <td></td>
+                <td><input type="checkbox" name="remember" id="remember" value="yes" />记住我？</td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" id="btnLog" onclick="validate();" value="登录" />
+                    <a href="/Register.html">注册</a>
+                </td>
+            </tr>
+        </table>
+        <input type="hidden" name="isPostBack" value="ok" />
+    </form>
+    <script src="Scripts/jquery.js"></script>
+    <script>
+
+        function refresh() {
+            $('#vimg').attr('src', 'VerificationCodeHandler.ashx?t=' + new Date().valueOf());
+        }
+
+        $(function () {
+            $('#btnLog').on('click', function () {
+                var txtUserName = $('#txtUserName').val();
+                var txtUserPwd = $('#txtUserPwd').val();
+                var inputCode = $('#code').val().toUpperCase();
+
+                //验证数据合法性
+                if (!txtUserName) {
+                    alert('用户名不能为空');
+                    $('#txtUserName').focus();
+                    return false;
+                }
+
+                if (!(/^\w{2,}$/).test(txtUserName)) {
+                    alert('用户名至少为两个连续字符！');
+                    $('#txtUserName').focus();
+                    return false;
+                }
+
+                if (!txtUserPwd) {
+                    alert('密码不能为空');
+                    $('#txtUserPwd').focus();
+                    return false;
+                }
+
+                if (inputCode.length <= 0) {
+                    alert("请输入验证码！");
+                    $('#txtVerificationCode').focus();
+                    return false;
+                } else if (inputCode != code) {
+                    alert("验证码输入错误！");
+                    $('#txtVerificationCode').focus();
+                    createCode();//刷新验证码
+                    return false;
+                }
+            });
+        });
+    </script>
+</body>
+</html>

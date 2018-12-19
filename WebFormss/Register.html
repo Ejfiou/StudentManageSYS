@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <form action="RegisterHandler.ashx" method="post">
+        <table>
+            <tr>
+                <td><label for="txtUserName">用户名：</label></td>
+                <td>
+                    <input type="text" name="txtUserName" id="txtUserName" />
+                    <img id="imgWaiting" src="images/0.gif" width="25px" />
+                    <span id="result"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="txtUserPwd">密  码：</label></td>
+                <td><input type="password" name="txtUserPwd" id="txtUserPwd" /></td>
+            </tr>
+            <tr>
+                <td><label for="txtReUserPwd">确认密码：</label></td>
+                <td><input type="password" name="txtReUserPwd" id="txtReUserPwd" /></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" id="btnReg" value="注册"  />
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script src="Scripts/jquery.js"></script>
+    <script>
+        $(function () {
+            $('#imgWaiting').hide();
+
+            $('#txtUserName').on('change', function () {
+                $.ajax({
+                    url: '/IsLoginIdRepeatHandler.ashx',
+                    type: 'POST',//get
+                    async: true,//是否异步提交
+                    data: 'txtUserName=' + $('#txtUserName').val(),
+                    dataType: 'text', //返回的数据格式:json/xml/html/script
+                    beforeSend:function(data){
+                        $('#imgWaiting').show();
+                    },
+                    success: function (data) {
+                        if (data === 'True') {
+                            $('#result').html('用户名已存在');
+                        }
+                        else {
+                            $('#result').html('可以使用');
+                        }
+                    },
+                    complete:function(){
+                        $('#imgWaiting').hide();
+                    }
+                });
+            });
+            $('#btnReg').on('click', function () {
+                var txtUserName = $('#txtUserName').val();
+                var txtUserPwd = $('#txtUserPwd').val();
+                var txtReUserPwd = $('#txtReUserPwd').val();
+
+                debugger;
+                //验证数据合法性
+                if (!txtUserPwd) {
+                    alert('密码不能为空');
+                    $('#txtUserPwd').focus();
+                    return false;
+                }
+
+                if (!txtUserName) {
+                    alert('用户名不能为空');
+                    $('#txtUserName').focus();
+                    return false;
+                }
+
+                if (txtReUserPwd != txtUserPwd) {
+                    alert('两次密码不匹配');
+                    $('#txtNewPwd').focus();
+                    return false;
+                }
+            });
+        });
+        
+    </script>
+</body>
+</html>

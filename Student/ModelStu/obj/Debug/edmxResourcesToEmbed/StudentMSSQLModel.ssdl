@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Student.Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="AdminGuid" />
+    </Key>
+    <Property Name="AdminGuid" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LoginId" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="LoginPwd" Type="varchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Class">
+    <Key>
+      <PropertyRef Name="ClassGuid" />
+    </Key>
+    <Property Name="ClassGuid" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ClassName" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="GradeGuid" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Grade">
+    <Key>
+      <PropertyRef Name="GradeGuid" />
+    </Key>
+    <Property Name="GradeGuid" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="GradeName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="GradeSeq" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="StudentGuid" />
+    </Key>
+    <Property Name="StudentGuid" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LoginId" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="LoginPwd" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="UserStateId" Type="int" Nullable="false" />
+    <Property Name="ClassGuid" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="StudentNO" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="StudentName" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Sex" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Address" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Subject">
+    <Key>
+      <PropertyRef Name="SubjectGUID" />
+    </Key>
+    <Property Name="SubjectGUID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SubjectName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="GradeGUID" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Teacher">
+    <Key>
+      <PropertyRef Name="TeacherGUID" />
+    </Key>
+    <Property Name="TeacherGUID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LoginId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LoginPwd" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserStateId" Type="int" Nullable="false" />
+    <Property Name="TeacherName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Sex" Type="nvarchar" MaxLength="10" />
+    <Property Name="Birthday" Type="datetime" />
+    <Property Name="SubjectGUID" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Class_Grade">
+    <End Role="Grade" Type="Self.Grade" Multiplicity="1" />
+    <End Role="Class" Type="Self.Class" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grade">
+        <PropertyRef Name="GradeGuid" />
+      </Principal>
+      <Dependent Role="Class">
+        <PropertyRef Name="GradeGuid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Student_Class">
+    <End Role="Class" Type="Self.Class" Multiplicity="1" />
+    <End Role="Student" Type="Self.Student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Class">
+        <PropertyRef Name="ClassGuid" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="ClassGuid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Subject_Grade">
+    <End Role="Grade" Type="Self.Grade" Multiplicity="1" />
+    <End Role="Subject" Type="Self.Subject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grade">
+        <PropertyRef Name="GradeGuid" />
+      </Principal>
+      <Dependent Role="Subject">
+        <PropertyRef Name="GradeGUID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Teacher_Subject">
+    <End Role="Subject" Type="Self.Subject" Multiplicity="0..1" />
+    <End Role="Teacher" Type="Self.Teacher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subject">
+        <PropertyRef Name="SubjectGUID" />
+      </Principal>
+      <Dependent Role="Teacher">
+        <PropertyRef Name="SubjectGUID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="StudentModelStoreContainer">
+    <EntitySet Name="Admin" EntityType="Self.Admin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Class" EntityType="Self.Class" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Grade" EntityType="Self.Grade" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Student" EntityType="Self.Student" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Subject" EntityType="Self.Subject" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Teacher" EntityType="Self.Teacher" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Class_Grade" Association="Self.FK_Class_Grade">
+      <End Role="Grade" EntitySet="Grade" />
+      <End Role="Class" EntitySet="Class" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Student_Class" Association="Self.FK_Student_Class">
+      <End Role="Class" EntitySet="Class" />
+      <End Role="Student" EntitySet="Student" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Subject_Grade" Association="Self.FK_Subject_Grade">
+      <End Role="Grade" EntitySet="Grade" />
+      <End Role="Subject" EntitySet="Subject" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Teacher_Subject" Association="Self.FK_Teacher_Subject">
+      <End Role="Subject" EntitySet="Subject" />
+      <End Role="Teacher" EntitySet="Teacher" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

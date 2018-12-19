@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @RenderSection("head",false)
+    <style type="text/css">
+        .myDiv {
+            display: inline-block;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="header" style="text-align:center">
+            <span style="font-weight:bold;font-size:xx-large;font-family:华文行楷">
+                我的学生管理系统
+                @Html.Partial("_PartialCurrentUser")
+            </span>
+        </div>
+        <div id="nav" class="myDiv" style="width:120px;background-color:#CCFFFF">
+            <div style="text-align:center">
+                <span>菜单</span>
+            </div>
+            <br />
+            @Html.ActionLink("主页","Index","Home")
+            <br />
+            <br />
+            @Html.ActionLink("学生管理", "Index", "Student")
+            <br />
+        </div>
+        <div id="section" class="myDiv">
+            @RenderBody()
+        </div>
+        <div id="footer" style="text-align:center">
+            <hr />
+            <span style="font-weight:bold;font-size:large" >
+                Copyright XXX
+            </span>
+        </div>
+        
+    </div>
+    <script src="~/Scripts/jquery-3.1.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    @RenderSection("Scripts",false)
+</body>
+</html>

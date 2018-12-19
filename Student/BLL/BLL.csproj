@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{32A31DA0-48C0-4B22-8296-396160890509}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Student.BLL</RootNamespace>
+    <AssemblyName>BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLLAdmin.cs" />
+    <Compile Include="BLLLogin.cs" />
+    <Compile Include="BLLStudentSeacher.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DALAbstractFactory\DALAbstractFactory.csproj">
+      <Project>{88ffd678-af93-4625-8df1-26ae4155f7cd}</Project>
+      <Name>DALAbstractFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DALMSSQLFactory\DALMSSQLFactory.csproj">
+      <Project>{d9c13930-fcaa-4ef8-af52-2a6584740e21}</Project>
+      <Name>DALMSSQLFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DALMSSQL\DALMSSQL.csproj">
+      <Project>{91054d31-8b9f-4840-83ee-9f4f684226c9}</Project>
+      <Name>DALMSSQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DALMySQLFactory\DALMySQLFactory.csproj">
+      <Project>{9fb738c4-1424-4d17-9343-d6f5bee5f13d}</Project>
+      <Name>DALMySQLFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DALMySQL\DALMySQL.csproj">
+      <Project>{0d169515-134c-4cae-a47d-fcc4d67c400e}</Project>
+      <Name>DALMySQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IBLL\IBLL.csproj">
+      <Project>{367e055d-ca6d-4a2b-b285-4c10378c0cb2}</Project>
+      <Name>IBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDAL\IDAL.csproj">
+      <Project>{b6c1251c-515b-4f18-8143-8c0079c95e42}</Project>
+      <Name>IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ModelStuView\ModelStuView.csproj">
+      <Project>{b5122c5a-ae05-476b-b413-64d76024cfbd}</Project>
+      <Name>ModelStuView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ModelStu\ModelStu.csproj">
+      <Project>{85b4ef70-548a-40db-b6bf-f147670915d9}</Project>
+      <Name>ModelStu</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

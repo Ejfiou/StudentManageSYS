@@ -1,0 +1,105 @@
+﻿@model ASP.NET_MVC.Models.RegisterViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Register</title>
+    <style type="text/css">
+        .field-validation-error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div> 
+        @using (Html.BeginForm())
+        {
+            <table>
+                <tr>
+                    <td>
+                        @Html.LabelFor(m=>m.UserName)
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(m=>m.UserName)
+                    </td>
+                    <td valign="bottom">
+                        @Html.ValidationMessageFor(m=>m.UserName)
+                    </td>
+                    <td>
+                        <img id="imgWaiting" src="~/images/0.gif" width="25px" />
+                        <span id="result"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.LabelFor(m => m.UserPwd)
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(m => m.UserPwd)
+                    </td>
+                    <td >
+                        @Html.ValidationMessageFor(m => m.UserPwd)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.LabelFor(m => m.ReUserPwd)
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(m => m.ReUserPwd)
+                    </td>
+                    <td>
+                        @Html.ValidationMessageFor(m => m.ReUserPwd)
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" id="btnReg" value="注册" />
+                    </td>
+                </tr>
+            </table>
+        }
+    </div>
+
+    <script src="~/Scripts/jquery-3.1.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script type="text/javascript"> 
+        $(function () {
+            $('#imgWaiting').hide();
+
+            $('#UserName').on('change', function () {
+                $.ajax({
+                    //WebServer提交
+                    url: '/WebService.asmx/IsLoginIdRepeat',
+                    type: 'POST',//get
+                    async: true,//是否异步提交
+                    data: 'txtUserName=' + $('#UserName').val(),
+                    dataType: 'text', //返回的数据格式:json/xml/html/script/text
+                    beforeSend: function (data) {
+                        $('#imgWaiting').show();
+                    },
+                    success: function (data) {
+                        if (data === 'True') {
+                            $('#result').html('用户名已存在').css('color','red');
+                            $('#btnReg').attr('disabled', true);
+                        }
+                        else {
+                            $('#result').html('可以使用');
+                            $('#btnReg').attr('disabled', false);
+                        }
+                    },
+                    complete: function () {
+                        $('#imgWaiting').hide();
+                    }
+                });
+            });
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+E:\C#课程\AAA\Student\ModelStuView\bin\Debug\ModelStuView.dll
+E:\C#课程\AAA\Student\ModelStuView\bin\Debug\ModelStuView.pdb
+E:\C#课程\AAA\Student\ModelStuView\obj\Debug\ModelStuView.csprojResolveAssemblyReference.cache
+E:\C#课程\AAA\Student\ModelStuView\obj\Debug\ModelStuView.dll
+E:\C#课程\AAA\Student\ModelStuView\obj\Debug\ModelStuView.pdb
+C:\Users\13695\Documents\Tencent Files\1369540047\FileRecv\Student\ModelStuView\bin\Debug\ModelStuView.dll
+C:\Users\13695\Documents\Tencent Files\1369540047\FileRecv\Student\ModelStuView\bin\Debug\ModelStuView.pdb
+C:\Users\13695\Documents\Tencent Files\1369540047\FileRecv\Student\ModelStuView\obj\Debug\ModelStuView.dll
+C:\Users\13695\Documents\Tencent Files\1369540047\FileRecv\Student\ModelStuView\obj\Debug\ModelStuView.pdb
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ModelStuView\bin\Debug\ModelStuView.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ModelStuView\bin\Debug\ModelStuView.pdb
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ModelStuView\obj\Debug\ModelStuView.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ModelStuView\obj\Debug\ModelStuView.pdb
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ModelStuView\obj\Debug\ModelStuView.csprojResolveAssemblyReference.cache
+D:\c盘\Projects\Student\ModelStuView\bin\Debug\ModelStuView.dll
+D:\c盘\Projects\Student\ModelStuView\bin\Debug\ModelStuView.pdb
+D:\c盘\Projects\Student\ModelStuView\obj\Debug\ModelStuView.csprojAssemblyReference.cache
+D:\c盘\Projects\Student\ModelStuView\obj\Debug\ModelStuView.csproj.CoreCompileInputs.cache
+D:\c盘\Projects\Student\ModelStuView\obj\Debug\ModelStuView.dll
+D:\c盘\Projects\Student\ModelStuView\obj\Debug\ModelStuView.pdb

@@ -1,0 +1,161 @@
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\ApplicationInsights.config
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\roslyn\csc.exe
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\roslyn\vbc.exe
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\roslyn\VBCSCompiler.exe
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\ASP.NET MVC.dll.config
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\ASP.NET MVC.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\ASP.NET MVC.pdb
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\BLL.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\DALAbstractFactory.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\DALMSSQL.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\DALMSSQLEF.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\DALMSSQLFactory.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\DALMySQL.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\DALMySQLFactory.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\EntityFramework.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\IBLL.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\IDAL.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\Microsoft.AI.Web.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\Microsoft.ApplicationInsights.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\ModelStu.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\ModelStuView.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\System.Web.Helpers.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\System.Web.Mvc.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\System.Web.Razor.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\System.Web.Webpages.Deployment.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\System.Web.Webpages.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\System.Web.Webpages.Razor.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\MySql.Data.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\BLL.pdb
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\DALAbstractFactory.pdb
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\DALMSSQLEF.pdb
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\DALMSSQLFactory.pdb
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\DALMSSQL.pdb
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\DALMySQLFactory.pdb
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\DALMySQL.pdb
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\IBLL.pdb
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\IDAL.pdb
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\ModelStuView.pdb
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\ModelStu.pdb
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\EntityFramework.xml
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\Microsoft.AI.Web.xml
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\Microsoft.ApplicationInsights.xml
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\System.Web.Razor.xml
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\System.Web.Webpages.xml
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\System.Web.Webpages.Deployment.xml
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\System.Web.Webpages.Razor.xml
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\System.Web.Helpers.xml
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\System.Web.Mvc.xml
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\MySql.Data.xml
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\zh-Hans\System.Web.Webpages.resources.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\obj\Debug\ASP.NET MVC.csprojResolveAssemblyReference.cache
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\obj\Debug\ASP.NET MVC.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ASP.NET MVC\obj\Debug\ASP.NET MVC.pdb
+D:\c盘\Projects\Student\ASP.NET MVC\bin\ApplicationInsights.config
+D:\c盘\Projects\Student\ASP.NET MVC\bin\roslyn\csc.exe
+D:\c盘\Projects\Student\ASP.NET MVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\c盘\Projects\Student\ASP.NET MVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\c盘\Projects\Student\ASP.NET MVC\bin\roslyn\System.Collections.Immutable.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\roslyn\System.Reflection.Metadata.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\roslyn\vbc.exe
+D:\c盘\Projects\Student\ASP.NET MVC\bin\roslyn\VBCSCompiler.exe
+D:\c盘\Projects\Student\ASP.NET MVC\bin\roslyn\VBCSCompiler.exe.config
+D:\c盘\Projects\Student\ASP.NET MVC\bin\ASP.NET MVC.dll.config
+D:\c盘\Projects\Student\ASP.NET MVC\bin\ASP.NET MVC.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\ASP.NET MVC.pdb
+D:\c盘\Projects\Student\ASP.NET MVC\bin\BLL.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\DALAbstractFactory.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\DALMSSQL.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\DALMSSQLEF.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\DALMSSQLFactory.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\DALMySQL.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\DALMySQLFactory.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\EntityFramework.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\IBLL.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\IDAL.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\Microsoft.AI.Agent.Intercept.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\Microsoft.AI.DependencyCollector.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\Microsoft.AI.Web.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\Microsoft.AI.WindowsServer.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\Microsoft.ApplicationInsights.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\Microsoft.Web.Infrastructure.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\ModelStu.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\ModelStuView.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\System.Web.Helpers.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\System.Web.Mvc.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\System.Web.Razor.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\System.Web.Webpages.Deployment.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\System.Web.Webpages.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\System.Web.Webpages.Razor.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\MySql.Data.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\BLL.pdb
+D:\c盘\Projects\Student\ASP.NET MVC\bin\DALAbstractFactory.pdb
+D:\c盘\Projects\Student\ASP.NET MVC\bin\DALMSSQLEF.pdb
+D:\c盘\Projects\Student\ASP.NET MVC\bin\DALMSSQLFactory.pdb
+D:\c盘\Projects\Student\ASP.NET MVC\bin\DALMSSQL.pdb
+D:\c盘\Projects\Student\ASP.NET MVC\bin\DALMySQLFactory.pdb
+D:\c盘\Projects\Student\ASP.NET MVC\bin\DALMySQL.pdb
+D:\c盘\Projects\Student\ASP.NET MVC\bin\IBLL.pdb
+D:\c盘\Projects\Student\ASP.NET MVC\bin\IDAL.pdb
+D:\c盘\Projects\Student\ASP.NET MVC\bin\ModelStuView.pdb
+D:\c盘\Projects\Student\ASP.NET MVC\bin\ModelStu.pdb
+D:\c盘\Projects\Student\ASP.NET MVC\bin\ModelStu.dll.config
+D:\c盘\Projects\Student\ASP.NET MVC\bin\EntityFramework.xml
+D:\c盘\Projects\Student\ASP.NET MVC\bin\Microsoft.AI.DependencyCollector.xml
+D:\c盘\Projects\Student\ASP.NET MVC\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\c盘\Projects\Student\ASP.NET MVC\bin\Microsoft.AI.Web.xml
+D:\c盘\Projects\Student\ASP.NET MVC\bin\Microsoft.AI.WindowsServer.xml
+D:\c盘\Projects\Student\ASP.NET MVC\bin\Microsoft.ApplicationInsights.xml
+D:\c盘\Projects\Student\ASP.NET MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\c盘\Projects\Student\ASP.NET MVC\bin\System.Web.Razor.xml
+D:\c盘\Projects\Student\ASP.NET MVC\bin\System.Web.Webpages.xml
+D:\c盘\Projects\Student\ASP.NET MVC\bin\System.Web.Webpages.Deployment.xml
+D:\c盘\Projects\Student\ASP.NET MVC\bin\System.Web.Webpages.Razor.xml
+D:\c盘\Projects\Student\ASP.NET MVC\bin\System.Web.Helpers.xml
+D:\c盘\Projects\Student\ASP.NET MVC\bin\System.Web.Mvc.xml
+D:\c盘\Projects\Student\ASP.NET MVC\bin\MySql.Data.xml
+D:\c盘\Projects\Student\ASP.NET MVC\bin\zh-Hans\EntityFramework.resources.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\zh-Hans\System.Web.Razor.resources.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\zh-Hans\System.Web.Webpages.resources.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\zh-Hans\System.Web.Helpers.resources.dll
+D:\c盘\Projects\Student\ASP.NET MVC\bin\zh-Hans\System.Web.Mvc.resources.dll
+D:\c盘\Projects\Student\ASP.NET MVC\obj\Debug\ASP.NET MVC.csprojAssemblyReference.cache
+D:\c盘\Projects\Student\ASP.NET MVC\obj\Debug\ASP.NET MVC.csproj.CoreCompileInputs.cache
+D:\c盘\Projects\Student\ASP.NET MVC\obj\Debug\ASP.NET MVC.csproj.CopyComplete
+D:\c盘\Projects\Student\ASP.NET MVC\obj\Debug\ASP.NET MVC.dll
+D:\c盘\Projects\Student\ASP.NET MVC\obj\Debug\ASP.NET MVC.pdb

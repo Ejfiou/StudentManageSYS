@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <style>
+        form span{
+            margin:20px;
+        }
+        #btnAdd{
+            text-align;
+        }
+    </style>
+</head>
+<body>
+    <h1>学生管理</h1>
+    <div>
+        <input type="button" value="增加学生" id="btnAdd" />
+    </div>
+    <form action="StudentHandler.ashx" method="post">
+        <div>
+            <span>
+                <label for="txtStudentName">请输入要查询的姓名</label>
+                <input type="text" name="txtStudentName" id='txtStudentName' />
+            </span>
+            <span>
+                <label for="cboSex">请选择要查询的性别</label>
+                <select name="cboSex" id="cboSex">
+                    <option value=''></option>
+                    <option value='男'>男</option>
+                    <option value='女'>女</option>
+                </select>
+            </span>
+            <br />
+            <span>
+                <label for="cboClass">请选择要查询的班级</label>
+                <select name="cboClass" id="cboClass">
+                    <option></option>
+                    <!--<%=optionClass%>-->
+                </select>
+            </span>
+            <span>
+                <input type="submit" value="查询" id="btnQuery" />
+            </span>
+            <input type="hidden" name="isPostBack" value="ok" />
+
+        </div>
+        <div>
+            <table border="1">
+                <tr>
+                    <th>用户名</th>
+                    <th>班级</th>
+                    <th>学号</th>
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th>地址</th>
+                    <th>修改</th>
+                    <th>删除</th>
+                </tr>
+                <!--<tr>
+                    <td>t001</td>
+                    <td>一班</td>
+                    <td>123</td>
+                    <td>tom</td>
+                    <td>男</td>
+                    <td>苏州</td>
+                    <td><input type="button" value="修改"/></td>
+                    <td><input type="button" value="删除" /></td>
+                </tr>-->
+                <!--<%=trStudent%>-->
+            </table>
+        </div>
+        <div id="page">
+            <a href="#" id="First">第一页</a>
+            <a href="#" id="Previous">上一页</a>
+            <a href="#" id="Next">下一页</a>
+            <a href="#" id="Last">最后一页</a>
+            <span>第<!--<%=pageNumber%>-->页，共<!--<%=pageTotalNumber%>-->页</span>
+            <input type="hidden" name="aBtn" id="aBtn" value="" />
+            <input type="hidden" name="pageNumber" id='pageNumber'/>
+            <input type="hidden" name="pageTotalNumber" id='pageTotalNumber' />
+        </div>
+    </form>
+    <script src="Scripts/jquery.js"></script>
+    <script>
+        $(function () {
+            var pageNumber = parseInt($("#pageNumber").val());
+            var pageTotalNumber = parseInt($('#pageTotalNumber').val());
+            
+            $('#First').on('click', function () {
+                $("#pageNumber").val('1');
+                $("#aBtn").val('First');
+                $("form").submit();
+                return false;
+            });
+
+            $('#Previous').on('click', function () {
+                var page =  parseInt($("#pageNumber").val());
+                pageNumber--;
+                $('#pageNumber').val(pageNumber);
+                $('#aBtn').val('Previous');
+                $('form').submit();
+                return false;
+            });
+
+            $('#Next').on('click', function () {
+                var page = parseInt($("#pageNumber").val());
+                pageNumber++;
+                $('#pageNumber').val(pageNumber);
+                $('#aBtn').val('Next');
+                $('form').submit();
+                return false;
+            });
+
+            $('#Last').on('click', function () {
+                var page = parseInt($("#pageNumber").val());
+                page--;
+                $("#pageNumber").val($('#pageTotalNumber').val());
+                $("#aBtn").val('Last');
+                $("form").submit();
+                return false;
+            });
+
+            if (pageNumber <= 1) {
+                $('#First').removeAttr('href').off('click');
+                $('#Previous').removeAttr('href').off('click');
+            }
+
+            if (pageNumber >= pageTotalNumber) {
+                $('#Next').removeAttr('href').off('click');
+                $('#Last').removeAttr('href').off('click');
+            }
+        });
+    </script>
+</body>
+</html>

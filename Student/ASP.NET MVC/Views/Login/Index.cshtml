@@ -1,0 +1,104 @@
+﻿@model ASP.NET_MVC.Models.LoginViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style type="text/css">
+        .field-validation-error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h6>欢迎光临！您是第 @this.Context.Application["totalCount"].ToString()个访问该网站</h6>
+    </div>
+    @{Html.BeginForm();}
+    <table cellspacing="18">
+        <tr>
+            <td>
+                @*<label for="txtUserName">用户名：</label>*@
+                @Html.LabelFor(m => m.UserName)
+            </td>
+            <td>
+                @*<input type="text" name="txtUserName" id="txtUserName" />*@
+                @Html.TextBoxFor(m => m.UserName)
+            </td>
+            <td>
+                @Html.ValidationMessageFor(m => m.UserName)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @*<label for="txtUserPwd">密&nbsp;&nbsp;码：</label>*@
+                @Html.LabelFor(m => m.UserPwd)
+            </td>
+            <td>
+                @*<input type="password" name="txtUserPwd" id="txtUserPwd" />*@
+                @Html.PasswordFor(m => m.UserPwd)
+            </td>
+            <td>
+                @Html.ValidationMessageFor(m => m.UserPwd)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @*<label for="txtVerificationCode">请输入验证码：</label>*@
+                @Html.LabelFor(m => m.VerificationCode)
+            </td>
+            <td>
+                @*<input type="text" name="txtVerificationCode" id="txtVerificationCode" />*@
+                @Html.TextBoxFor(m => m.VerificationCode)
+            </td>
+            <td>
+                @Html.ValidationMessageFor(m => m.VerificationCode)
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <label for="txtVerificationCode" style="color:silver">请输入下图的字符,不区分大小写</label>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <img src="@Url.Action("VerificationCode")" id="vimg" alt="验证码" width="80" height="30" onclick="refresh()" />
+                <a href="#" onclick="refresh()">看不清换一张</a>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                @*<input type="checkbox" name="remember" id="remember" value="yes" />记住我？*@
+                @Html.CheckBoxFor(m => m.Remember)
+                @Html.LabelFor(m => m.Remember)
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" id="btnLog" value="登录" />
+                @*<a href="/Register.html">注册</a>*@
+                @Html.ActionLink("注册", "Register")
+            </td>
+        </tr>
+    </table>
+    @{Html.EndForm();}
+
+    <script src="~/Scripts/jquery-3.1.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script>
+        function refresh() {
+            $('#vimg').attr('src', '@Url.Action("VerificationCode")?t=' + new Date().valueOf());
+        }
+    </script>
+</body>
+</html>

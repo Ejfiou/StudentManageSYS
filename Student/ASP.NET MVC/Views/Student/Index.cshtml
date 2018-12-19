@@ -1,0 +1,154 @@
+﻿@model ASP.NET_MVC.Models.StudentQueryParameter
+@using Student.ModelStu
+@{
+    ViewBag.Title = "Index";
+}
+
+@section head{
+    <style>
+        #page a{
+            margin:6px;
+        }
+    </style>
+    }
+<span style="font-weight:bold;font-size:xx-large">学生管理</span>
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.LabelFor(m => m.StudentName)
+        @Html.TextBoxFor(m => m.StudentName)
+        &nbsp;
+        @Html.LabelFor(m => m.Sex)
+        @Html.DropDownListFor(
+                    m => m.Sex,
+                    new List<SelectListItem>() {
+                    new SelectListItem() {Text="男" },
+                    new SelectListItem() {Text="女" }
+                    }
+                    , ""
+                )
+        &nbsp;
+        @Html.LabelFor(m => m.ClassName)
+        @Html.DropDownListFor(m => m.ClassName, ViewBag.ClassList as IEnumerable<SelectListItem>, "")
+        &nbsp;
+        <input type="submit" value="查询" id ="btnQuery" />
+        &nbsp;
+        <input type="button" value="增加学生" id="btnAdd" />
+    </div>
+    @Html.HiddenFor(m=>m.PageNumber)
+    @Html.HiddenFor(m => m.PageTotalNumber)
+}
+<div>
+    <table border="1">
+        <tr>
+            <th>用户名</th>
+            <th>班级</th>
+            <th>学号</th>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>地址</th>
+            <th>修改</th>
+            <th>删除</th>
+        </tr>
+        @{
+            if (ViewBag.listStudents is IEnumerable<Students>)
+            {
+                IEnumerable<Students> students = ViewBag.listStudents as IEnumerable<Students>;
+                if (students.Count() > 0)
+                {
+                    foreach (var item in students)
+                    {
+                        <tr>
+                            <td>@item.LoginId</td>
+                            <td>@item.classs.ClassName</td>
+                            <td>@item.StudentNO</td>
+                            <td>@item.StudentName</td>
+                            <td>@item.Sex</td>
+                            <td>@item.Address</td>
+                            <td><input type='button' value='修改' onclick="(modify('@item.StudentGuid}'))" /></td>
+                            <td><input type='button' value='删除' onclick="(Remove('@item.LoginId},@item.StudentGuid}'))" /></td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="8">
+                            <center>查无此数据</center>
+                        </td>
+                    </tr>
+                }
+            }
+        }
+    </table>
+</div>
+<div id="page">
+    <a href="javascript:void(0);" id="First">第一页</a>
+    <a href="javascript:void(0);" id="Previous">上一页</a>
+    <a href="javascript:void(0);" id="Next">下一页</a>
+    <a href="javascript:void(0);" id="Last">最后一页</a>
+    @*<span>第 @Model.PageNumber 页，共 @Model.PageTotalNumber 页</span>*@
+</div>
+
+@section Scripts{
+    <script>
+    function modify(guid) {
+            window.open('StudentModifyHandler.ashx?guid=' + guid);
+        };
+    function Remove(guid) {
+        var r = window.confirm("确定删除用户" + loginId + "吗？");
+        if (r == true) {
+            window.open('StudentRemove.aspx?guid=' + guid);
+        }
+    };
+
+        $(function () {
+            //添加按钮的点击事件
+            $('#btnAdd').on('click', function () {
+                window.open('StudentAddHandler.ashx');
+            });
+
+            //翻页
+            var pageNumber = parseInt($("#@Html.IdFor(m=>m.PageNumber)").val());
+            var pageTotalNumber = parseInt($('#@Html.IdFor(m=>m.PageTotalNumber)').val());
+
+            $('#First').on('click', function () {
+                $("#@Html.IdFor(m => m.PageNumber)").val('1');
+                $("form").submit();
+                return false;
+            });
+
+            $('#Previous').on('click', function () {
+                pageNumber--;
+                $('#@Html.IdFor(m => m.PageNumber)').val(pageNumber);
+                $('form').submit();
+                return false;
+            });
+
+            $('#Next').on('click', function () {
+                pageNumber++;
+                $('#@Html.IdFor(m => m.PageNumber)').val(pageNumber);
+                $('form').submit();
+                return false;
+            });
+
+            $('#Last').on('click', function () {
+                $("#@Html.IdFor(m => m.PageNumber)").val(pageTotalNumber);
+                $("#aBtn").val('Last');
+                $("form").submit();
+                return false;
+            });
+
+            if (pageNumber <= 1) {
+                $('#First').removeAttr('href').off('click');
+                $('#Previous').removeAttr('href').off('click');
+            }
+
+            if (pageNumber >= pageTotalNumber) {
+                $('#Next').removeAttr('href').off('click');
+                $('#Last').removeAttr('href').off('click');
+            }
+        });
+    </script>
+}
+

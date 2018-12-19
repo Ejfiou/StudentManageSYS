@@ -1,0 +1,49 @@
+E:\C#课程\AAA\Student\ModelStu\bin\Debug\ModelStu.dll.config
+E:\C#课程\AAA\Student\ModelStu\bin\Debug\ModelStu.dll
+E:\C#课程\AAA\Student\ModelStu\bin\Debug\ModelStu.pdb
+E:\C#课程\AAA\Student\ModelStu\bin\Debug\EntityFramework.dll
+E:\C#课程\AAA\Student\ModelStu\bin\Debug\EntityFramework.SqlServer.dll
+E:\C#课程\AAA\Student\ModelStu\bin\Debug\EntityFramework.xml
+E:\C#课程\AAA\Student\ModelStu\bin\Debug\EntityFramework.SqlServer.xml
+E:\C#课程\AAA\Student\ModelStu\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\C#课程\AAA\Student\ModelStu\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+E:\C#课程\AAA\Student\ModelStu\obj\Debug\ModelStu.csprojResolveAssemblyReference.cache
+E:\C#课程\AAA\Student\ModelStu\obj\Debug\ModelStu.dll
+E:\C#课程\AAA\Student\ModelStu\obj\Debug\ModelStu.pdb
+C:\Users\13695\Documents\Tencent Files\1369540047\FileRecv\Student\ModelStu\bin\Debug\ModelStu.dll.config
+C:\Users\13695\Documents\Tencent Files\1369540047\FileRecv\Student\ModelStu\bin\Debug\ModelStu.dll
+C:\Users\13695\Documents\Tencent Files\1369540047\FileRecv\Student\ModelStu\bin\Debug\ModelStu.pdb
+C:\Users\13695\Documents\Tencent Files\1369540047\FileRecv\Student\ModelStu\bin\Debug\EntityFramework.dll
+C:\Users\13695\Documents\Tencent Files\1369540047\FileRecv\Student\ModelStu\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\13695\Documents\Tencent Files\1369540047\FileRecv\Student\ModelStu\bin\Debug\EntityFramework.xml
+C:\Users\13695\Documents\Tencent Files\1369540047\FileRecv\Student\ModelStu\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\13695\Documents\Tencent Files\1369540047\FileRecv\Student\ModelStu\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\13695\Documents\Tencent Files\1369540047\FileRecv\Student\ModelStu\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+C:\Users\13695\Documents\Tencent Files\1369540047\FileRecv\Student\ModelStu\obj\Debug\ModelStu.dll
+C:\Users\13695\Documents\Tencent Files\1369540047\FileRecv\Student\ModelStu\obj\Debug\ModelStu.pdb
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ModelStu\bin\Debug\ModelStu.dll.config
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ModelStu\bin\Debug\ModelStu.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ModelStu\bin\Debug\ModelStu.pdb
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ModelStu\bin\Debug\EntityFramework.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ModelStu\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ModelStu\bin\Debug\EntityFramework.xml
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ModelStu\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ModelStu\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ModelStu\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ModelStu\obj\Debug\ModelStu.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ModelStu\obj\Debug\ModelStu.pdb
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ModelStu\obj\Debug\ModelStu.csprojResolveAssemblyReference.cache
+D:\c盘\Projects\Student\ModelStu\bin\Debug\ModelStu.dll.config
+D:\c盘\Projects\Student\ModelStu\bin\Debug\ModelStu.dll
+D:\c盘\Projects\Student\ModelStu\bin\Debug\ModelStu.pdb
+D:\c盘\Projects\Student\ModelStu\bin\Debug\EntityFramework.dll
+D:\c盘\Projects\Student\ModelStu\bin\Debug\EntityFramework.SqlServer.dll
+D:\c盘\Projects\Student\ModelStu\bin\Debug\EntityFramework.xml
+D:\c盘\Projects\Student\ModelStu\bin\Debug\EntityFramework.SqlServer.xml
+D:\c盘\Projects\Student\ModelStu\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\c盘\Projects\Student\ModelStu\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+D:\c盘\Projects\Student\ModelStu\obj\Debug\ModelStu.csprojAssemblyReference.cache
+D:\c盘\Projects\Student\ModelStu\obj\Debug\ModelStu.csproj.CoreCompileInputs.cache
+D:\c盘\Projects\Student\ModelStu\obj\Debug\ModelStu.csproj.CopyComplete
+D:\c盘\Projects\Student\ModelStu\obj\Debug\ModelStu.dll
+D:\c盘\Projects\Student\ModelStu\obj\Debug\ModelStu.pdb

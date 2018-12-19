@@ -1,0 +1,12 @@
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\DALMySQL\bin\Release\DALMySQL.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\DALMySQL\bin\Release\DALMySQL.pdb
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\DALMySQL\bin\Release\IDAL.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\DALMySQL\bin\Release\ModelStu.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\DALMySQL\bin\Release\ModelStuView.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\DALMySQL\bin\Release\MySql.Data.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\DALMySQL\bin\Release\IDAL.pdb
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\DALMySQL\bin\Release\ModelStuView.pdb
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\DALMySQL\bin\Release\ModelStu.pdb
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\DALMySQL\bin\Release\MySql.Data.xml
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\DALMySQL\obj\Release\DALMySQL.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\DALMySQL\obj\Release\DALMySQL.pdb

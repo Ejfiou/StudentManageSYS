@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="AsyncStudentAjaxService" CodeBehind="~/App_Code/AsyncStudentAjaxService.cs" %>

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>登录</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <form action="LoginHandler.ashx" method="post">
+        <table>
+            <tr>
+                <td><table>用户名：</table></td>
+                <td><input type="text" name="txtUserName" id="txtUserName"/></td>
+            </tr>
+            <tr>
+                <td><table>密  码：</table></td>
+                <td><input type="password" name="txtUserPwd" id="txtUserPwd"/></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" id="btnLog" value="登录" />
+                </td>
+            </tr>
+        </table>
+    </form>  
+    <script src="Scripts/jquery.js"></script>
+    <script>
+        $(function () {
+            $('#btnLog').on('click', function () {
+                var txtUserName = $('#txtUserName').val();
+                var txtUserPwd = $('#txtUserPwd').val();
+
+                //验证数据合法性
+                if (!txtUserName) {
+                    alert('用户名不能为空');
+                    $('#txtUserName').focus();
+                    return false;
+                }
+               
+                if (!(/^\w{2,}$/).test(txtUserName)) {
+                    
+                    alert('用户名至少为两个连续字符！');
+                    $('#txtUserName').focus();
+                    return false;
+                }
+
+                if (!txtUserPwd) {
+                    alert('密码不能为空');
+                    $('#txtUserPwd').focus();
+                    return false;
+                }
+            });
+        });
+    </script>
+    </body>
+</html>

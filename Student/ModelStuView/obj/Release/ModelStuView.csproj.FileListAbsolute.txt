@@ -1,0 +1,4 @@
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ModelStuView\bin\Release\ModelStuView.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ModelStuView\bin\Release\ModelStuView.pdb
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ModelStuView\obj\Release\ModelStuView.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ModelStuView\obj\Release\ModelStuView.pdb

@@ -1,0 +1,20 @@
+﻿@using Student.ModelStu;
+@using Student.IBLL;
+@using Student.BLL;
+@{ 
+    IBLLStudentSeacher iBLL = new BLLStudentSeacher();
+    object obj = this.Session["LoginIdUser"];
+    User s = obj as User;
+    if (obj == null && !(obj is User))
+    {
+        <script> alert('非法登录，请从登录页面进行'); window.location.href = '@Url.Action("Index","Login")';  </script>
+        return;
+    }
+
+}
+
+<div style="text-align:right;">
+     <span style="font-weight:bold;font-size:small">欢迎 @s.LoginId</span>
+    ,
+    @Html.ActionLink("修改密码", "ModifyPassword","Login"@*,new {style= "font-weight:bold;font-size:small" }*@)
+</div>

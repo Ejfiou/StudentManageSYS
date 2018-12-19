@@ -1,0 +1,173 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ModelLayer", "ModelLayer", "{8AAF7682-C445-40D2-9E0C-647903428E34}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccessLayer", "DataAccessLayer", "{D513B294-6E60-4290-8D95-12A8985744BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLogicLayer", "BusinessLogicLayer", "{E459129C-CE32-46DC-A2B8-43C2B190B49C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PresentationLayer", "PresentationLayer", "{597EDBB5-FD26-44AC-A853-8F72B24BBE87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelStu", "ModelStu\ModelStu.csproj", "{85B4EF70-548A-40DB-B6BF-F147670915D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DALMSSQL", "DALMSSQL\DALMSSQL.csproj", "{91054D31-8B9F-4840-83EE-9F4F684226C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsForms", "WindowsForms\WindowsForms.csproj", "{7B1F34BB-1045-4955-A14B-CD077CAFDEBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{32A31DA0-48C0-4B22-8296-396160890509}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelStuView", "ModelStuView\ModelStuView.csproj", "{B5122C5A-AE05-476B-B413-64D76024CFBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DALMySQL", "DALMySQL\DALMySQL.csproj", "{0D169515-134C-4CAE-A47D-FCC4D67C400E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDAL", "IDAL\IDAL.csproj", "{B6C1251C-515B-4F18-8143-8C0079C95E42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBLL", "IBLL\IBLL.csproj", "{367E055D-CA6D-4A2B-B285-4C10378C0CB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DALMySQLFactory", "DALMySQLFactory\DALMySQLFactory.csproj", "{9FB738C4-1424-4D17-9343-D6F5BEE5F13D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DALMSSQLFactory", "DALMSSQLFactory\DALMSSQLFactory.csproj", "{D9C13930-FCAA-4EF8-AF52-2A6584740E21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DALAbstractFactory", "DALAbstractFactory\DALAbstractFactory.csproj", "{88FFD678-AF93-4625-8DF1-26AE4155F7CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DALMSSQLEF", "DALMSSQLEF\DALMSSQLEF.csproj", "{BA025CE8-15FB-4408-BDB3-D9B3F48741EE}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebFormss", "..\WebFormss\", "{68DD3763-91B3-4A59-A8D8-7572525D0194}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6"
+		ProjectReferences = "{367e055d-ca6d-4a2b-b285-4c10378c0cb2}|IBLL.dll;{91054D31-8B9F-4840-83EE-9F4F684226C9}|DALMSSQL.dll;{B6C1251C-515B-4F18-8143-8C0079C95E42}|IDAL.dll;{85B4EF70-548A-40DB-B6BF-F147670915D9}|ModelStu.dll;{B5122C5A-AE05-476B-B413-64D76024CFBD}|ModelStuView.dll;{0D169515-134C-4CAE-A47D-FCC4D67C400E}|DALMySQL.dll;{32a31da0-48c0-4b22-8296-396160890509}|BLL.dll;{88FFD678-AF93-4625-8DF1-26AE4155F7CD}|DALAbstractFactory.dll;{D9C13930-FCAA-4EF8-AF52-2A6584740E21}|DALMSSQLFactory.dll;{9FB738C4-1424-4D17-9343-D6F5BEE5F13D}|DALMySQLFactory.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_58834"
+		Debug.AspNetCompiler.PhysicalPath = "..\WebFormss\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58834\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_58834"
+		Release.AspNetCompiler.PhysicalPath = "..\WebFormss\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58834\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "58834"
+		SlnRelativePath = "..\WebFormss\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ASP.NET", "ASP.NET\", "{7AACAD0B-BA89-422B-9AE4-58159572A3FC}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6"
+		ProjectReferences = "{32a31da0-48c0-4b22-8296-396160890509}|BLL.dll;{88FFD678-AF93-4625-8DF1-26AE4155F7CD}|DALAbstractFactory.dll;{B6C1251C-515B-4F18-8143-8C0079C95E42}|IDAL.dll;{85B4EF70-548A-40DB-B6BF-F147670915D9}|ModelStu.dll;{B5122C5A-AE05-476B-B413-64D76024CFBD}|ModelStuView.dll;{91054D31-8B9F-4840-83EE-9F4F684226C9}|DALMSSQL.dll;{D9C13930-FCAA-4EF8-AF52-2A6584740E21}|DALMSSQLFactory.dll;{0D169515-134C-4CAE-A47D-FCC4D67C400E}|DALMySQL.dll;{9FB738C4-1424-4D17-9343-D6F5BEE5F13D}|DALMySQLFactory.dll;{367E055D-CA6D-4A2B-B285-4C10378C0CB2}|IBLL.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_40627"
+		Debug.AspNetCompiler.PhysicalPath = "ASP.NET\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_40627\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_40627"
+		Release.AspNetCompiler.PhysicalPath = "ASP.NET\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_40627\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "40627"
+		SlnRelativePath = "ASP.NET\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NET MVC", "ASP.NET MVC\ASP.NET MVC.csproj", "{CE49C216-26F2-4C0D-B704-F6890465F1DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{85B4EF70-548A-40DB-B6BF-F147670915D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85B4EF70-548A-40DB-B6BF-F147670915D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85B4EF70-548A-40DB-B6BF-F147670915D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85B4EF70-548A-40DB-B6BF-F147670915D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91054D31-8B9F-4840-83EE-9F4F684226C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91054D31-8B9F-4840-83EE-9F4F684226C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91054D31-8B9F-4840-83EE-9F4F684226C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91054D31-8B9F-4840-83EE-9F4F684226C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B1F34BB-1045-4955-A14B-CD077CAFDEBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B1F34BB-1045-4955-A14B-CD077CAFDEBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B1F34BB-1045-4955-A14B-CD077CAFDEBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B1F34BB-1045-4955-A14B-CD077CAFDEBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32A31DA0-48C0-4B22-8296-396160890509}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32A31DA0-48C0-4B22-8296-396160890509}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32A31DA0-48C0-4B22-8296-396160890509}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32A31DA0-48C0-4B22-8296-396160890509}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5122C5A-AE05-476B-B413-64D76024CFBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5122C5A-AE05-476B-B413-64D76024CFBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5122C5A-AE05-476B-B413-64D76024CFBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5122C5A-AE05-476B-B413-64D76024CFBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D169515-134C-4CAE-A47D-FCC4D67C400E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D169515-134C-4CAE-A47D-FCC4D67C400E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D169515-134C-4CAE-A47D-FCC4D67C400E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D169515-134C-4CAE-A47D-FCC4D67C400E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6C1251C-515B-4F18-8143-8C0079C95E42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6C1251C-515B-4F18-8143-8C0079C95E42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6C1251C-515B-4F18-8143-8C0079C95E42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6C1251C-515B-4F18-8143-8C0079C95E42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{367E055D-CA6D-4A2B-B285-4C10378C0CB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{367E055D-CA6D-4A2B-B285-4C10378C0CB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{367E055D-CA6D-4A2B-B285-4C10378C0CB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{367E055D-CA6D-4A2B-B285-4C10378C0CB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FB738C4-1424-4D17-9343-D6F5BEE5F13D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FB738C4-1424-4D17-9343-D6F5BEE5F13D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FB738C4-1424-4D17-9343-D6F5BEE5F13D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FB738C4-1424-4D17-9343-D6F5BEE5F13D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9C13930-FCAA-4EF8-AF52-2A6584740E21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9C13930-FCAA-4EF8-AF52-2A6584740E21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9C13930-FCAA-4EF8-AF52-2A6584740E21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9C13930-FCAA-4EF8-AF52-2A6584740E21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88FFD678-AF93-4625-8DF1-26AE4155F7CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88FFD678-AF93-4625-8DF1-26AE4155F7CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88FFD678-AF93-4625-8DF1-26AE4155F7CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88FFD678-AF93-4625-8DF1-26AE4155F7CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA025CE8-15FB-4408-BDB3-D9B3F48741EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA025CE8-15FB-4408-BDB3-D9B3F48741EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA025CE8-15FB-4408-BDB3-D9B3F48741EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA025CE8-15FB-4408-BDB3-D9B3F48741EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68DD3763-91B3-4A59-A8D8-7572525D0194}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68DD3763-91B3-4A59-A8D8-7572525D0194}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68DD3763-91B3-4A59-A8D8-7572525D0194}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{68DD3763-91B3-4A59-A8D8-7572525D0194}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{7AACAD0B-BA89-422B-9AE4-58159572A3FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AACAD0B-BA89-422B-9AE4-58159572A3FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AACAD0B-BA89-422B-9AE4-58159572A3FC}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AACAD0B-BA89-422B-9AE4-58159572A3FC}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{CE49C216-26F2-4C0D-B704-F6890465F1DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE49C216-26F2-4C0D-B704-F6890465F1DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE49C216-26F2-4C0D-B704-F6890465F1DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE49C216-26F2-4C0D-B704-F6890465F1DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{85B4EF70-548A-40DB-B6BF-F147670915D9} = {8AAF7682-C445-40D2-9E0C-647903428E34}
+		{91054D31-8B9F-4840-83EE-9F4F684226C9} = {D513B294-6E60-4290-8D95-12A8985744BA}
+		{7B1F34BB-1045-4955-A14B-CD077CAFDEBE} = {597EDBB5-FD26-44AC-A853-8F72B24BBE87}
+		{32A31DA0-48C0-4B22-8296-396160890509} = {E459129C-CE32-46DC-A2B8-43C2B190B49C}
+		{B5122C5A-AE05-476B-B413-64D76024CFBD} = {8AAF7682-C445-40D2-9E0C-647903428E34}
+		{0D169515-134C-4CAE-A47D-FCC4D67C400E} = {D513B294-6E60-4290-8D95-12A8985744BA}
+		{B6C1251C-515B-4F18-8143-8C0079C95E42} = {D513B294-6E60-4290-8D95-12A8985744BA}
+		{367E055D-CA6D-4A2B-B285-4C10378C0CB2} = {E459129C-CE32-46DC-A2B8-43C2B190B49C}
+		{9FB738C4-1424-4D17-9343-D6F5BEE5F13D} = {D513B294-6E60-4290-8D95-12A8985744BA}
+		{D9C13930-FCAA-4EF8-AF52-2A6584740E21} = {D513B294-6E60-4290-8D95-12A8985744BA}
+		{88FFD678-AF93-4625-8DF1-26AE4155F7CD} = {D513B294-6E60-4290-8D95-12A8985744BA}
+		{BA025CE8-15FB-4408-BDB3-D9B3F48741EE} = {D513B294-6E60-4290-8D95-12A8985744BA}
+		{68DD3763-91B3-4A59-A8D8-7572525D0194} = {597EDBB5-FD26-44AC-A853-8F72B24BBE87}
+		{7AACAD0B-BA89-422B-9AE4-58159572A3FC} = {597EDBB5-FD26-44AC-A853-8F72B24BBE87}
+		{CE49C216-26F2-4C0D-B704-F6890465F1DD} = {597EDBB5-FD26-44AC-A853-8F72B24BBE87}
+	EndGlobalSection
+EndGlobal

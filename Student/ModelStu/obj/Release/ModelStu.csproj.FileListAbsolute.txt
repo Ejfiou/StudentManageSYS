@@ -1,0 +1,4 @@
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ModelStu\bin\Release\ModelStu.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ModelStu\bin\Release\ModelStu.pdb
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ModelStu\obj\Release\ModelStu.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\ModelStu\obj\Release\ModelStu.pdb

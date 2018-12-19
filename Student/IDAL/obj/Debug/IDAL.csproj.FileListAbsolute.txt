@@ -1,0 +1,51 @@
+E:\C#课程\AAA\Student\IDAL\bin\Debug\IDAL.dll
+E:\C#课程\AAA\Student\IDAL\bin\Debug\IDAL.pdb
+E:\C#课程\AAA\Student\IDAL\bin\Debug\ModelStu.dll
+E:\C#课程\AAA\Student\IDAL\bin\Debug\ModelStuView.dll
+E:\C#课程\AAA\Student\IDAL\bin\Debug\EntityFramework.dll
+E:\C#课程\AAA\Student\IDAL\bin\Debug\ModelStuView.pdb
+E:\C#课程\AAA\Student\IDAL\bin\Debug\ModelStu.pdb
+E:\C#课程\AAA\Student\IDAL\bin\Debug\EntityFramework.xml
+E:\C#课程\AAA\Student\IDAL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\C#课程\AAA\Student\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
+E:\C#课程\AAA\Student\IDAL\obj\Debug\IDAL.dll
+E:\C#课程\AAA\Student\IDAL\obj\Debug\IDAL.pdb
+C:\Users\13695\Documents\Tencent Files\1369540047\FileRecv\Student\IDAL\bin\Debug\IDAL.dll
+C:\Users\13695\Documents\Tencent Files\1369540047\FileRecv\Student\IDAL\bin\Debug\IDAL.pdb
+C:\Users\13695\Documents\Tencent Files\1369540047\FileRecv\Student\IDAL\bin\Debug\ModelStu.dll
+C:\Users\13695\Documents\Tencent Files\1369540047\FileRecv\Student\IDAL\bin\Debug\ModelStuView.dll
+C:\Users\13695\Documents\Tencent Files\1369540047\FileRecv\Student\IDAL\bin\Debug\EntityFramework.dll
+C:\Users\13695\Documents\Tencent Files\1369540047\FileRecv\Student\IDAL\bin\Debug\ModelStuView.pdb
+C:\Users\13695\Documents\Tencent Files\1369540047\FileRecv\Student\IDAL\bin\Debug\ModelStu.pdb
+C:\Users\13695\Documents\Tencent Files\1369540047\FileRecv\Student\IDAL\bin\Debug\EntityFramework.xml
+C:\Users\13695\Documents\Tencent Files\1369540047\FileRecv\Student\IDAL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\13695\Documents\Tencent Files\1369540047\FileRecv\Student\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
+C:\Users\13695\Documents\Tencent Files\1369540047\FileRecv\Student\IDAL\obj\Debug\IDAL.dll
+C:\Users\13695\Documents\Tencent Files\1369540047\FileRecv\Student\IDAL\obj\Debug\IDAL.pdb
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\IDAL\bin\Debug\IDAL.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\IDAL\bin\Debug\IDAL.pdb
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\IDAL\bin\Debug\ModelStu.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\IDAL\bin\Debug\ModelStuView.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\IDAL\bin\Debug\EntityFramework.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\IDAL\bin\Debug\ModelStuView.pdb
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\IDAL\bin\Debug\ModelStu.pdb
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\IDAL\bin\Debug\EntityFramework.xml
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\IDAL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\IDAL\obj\Debug\IDAL.dll
+C:\Users\13695\Documents\Visual Studio 2015\Projects\Student\IDAL\obj\Debug\IDAL.pdb
+D:\c盘\Projects\Student\IDAL\bin\Debug\IDAL.dll
+D:\c盘\Projects\Student\IDAL\bin\Debug\IDAL.pdb
+D:\c盘\Projects\Student\IDAL\bin\Debug\ModelStu.dll
+D:\c盘\Projects\Student\IDAL\bin\Debug\ModelStuView.dll
+D:\c盘\Projects\Student\IDAL\bin\Debug\EntityFramework.dll
+D:\c盘\Projects\Student\IDAL\bin\Debug\ModelStuView.pdb
+D:\c盘\Projects\Student\IDAL\bin\Debug\ModelStu.pdb
+D:\c盘\Projects\Student\IDAL\bin\Debug\ModelStu.dll.config
+D:\c盘\Projects\Student\IDAL\bin\Debug\EntityFramework.xml
+D:\c盘\Projects\Student\IDAL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\c盘\Projects\Student\IDAL\obj\Debug\IDAL.csprojAssemblyReference.cache
+D:\c盘\Projects\Student\IDAL\obj\Debug\IDAL.csproj.CoreCompileInputs.cache
+D:\c盘\Projects\Student\IDAL\obj\Debug\IDAL.csproj.CopyComplete
+D:\c盘\Projects\Student\IDAL\obj\Debug\IDAL.dll
+D:\c盘\Projects\Student\IDAL\obj\Debug\IDAL.pdb
